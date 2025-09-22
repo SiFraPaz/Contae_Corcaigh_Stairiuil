@@ -1,0 +1,1 @@
+var json_Cork_4 = {"type":"FeatureCollection","name":"Cork_4","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"1","Name":"Corcaigh/Cork"},"geometry":{"type":"Point","coordinates":[-8.472869118727377,51.898519592036564]}}]}
