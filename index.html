@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonraí Stairiúla Geografacha Contae Chorcaí / Historical Geodata County Cork</title>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/ol.css">
+    <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
     <style>
         /* Allgemeines Styling */
         body {
@@ -55,6 +57,14 @@
         main p {
             line-height: 1.6;
         }
+        /* Karte */
+        #map {
+            width: 100%;
+            height: 500px;
+            margin: 20px 0;
+            border: 2px solid #2e8b57;
+            border-radius: 8px;
+        }
         /* Footer */
         footer {
             text-align: center;
@@ -87,6 +97,8 @@
         <section id="maps">
             <h2>Maps</h2>
             <p>Discover historical and modern maps of County Cork. From ancient boundaries to modern-day layouts, our collection offers a comprehensive view of the region's geography.</p>
+            <!-- Karte -->
+            <div id="map"></div>
         </section>
         <section id="history">
             <h2>History</h2>
@@ -100,5 +112,23 @@
     <footer>
         <p>&copy; <?php echo date("Y"); ?> Sonraí Stairiúla Geografacha Contae Chorcaí / Historical Geodata County Cork</p>
     </footer>
+    <!-- OpenLayers und andere Ressourcen -->
+    <script src="./resources/ol.js"></script>
+    <script src="./resources/ol-layerswitcher.js"></script>
+    <script src="./resources/qgis2web_expressions.js"></script>
+    <script src="./resources/functions.js"></script>
+    <script src="./resources/Autolinker.min.js"></script>
+    <!-- Layer- und Style-Dateien -->
+    <script src="./layers/layers.js"></script>
+    <script src="./styles/Waterbodies_2_style.js"></script>
+    <script src="./styles/Cork_4_style.js"></script>
+    <script src="./styles/Buildings_5_style.js"></script>
+    <script src="./styles/Nature_6_style.js"></script>
+    <script src="./styles/Harbours_7_style.js"></script>
+    <script src="./styles/Historical_Buildings_8_style.js"></script>
+    <script src="./styles/Mountains_9_style.js"></script>
+    <script src="./styles/Settlements_10_style.js"></script>
+    <!-- Haupt-JavaScript-Datei -->
+    <script src="./resources/qgis2web.js"></script>
 </body>
 </html>
